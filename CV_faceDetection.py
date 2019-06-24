@@ -15,7 +15,7 @@ while(True):
         print(x, y, w, h)
         roi_gray = gray[y:y + h, x:x + w]  # (ycord_start, ycord_end)
         roi_color = frame[y:y + h, x:x + w]
-        img_item = "7.png"
+        img_item = "myFace.png"
         cv2.imwrite(img_item, roi_color)
 
         color = (255, 0, 0)  # BGR 0-255
